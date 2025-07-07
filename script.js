@@ -1,4 +1,9 @@
 document.addEventListener('DOMContentLoaded', () => {
+// Disable right-click
+    document.addEventListener('contextmenu', event => {
+        event.preventDefault();
+        alert("Right-click is disabled on this page.");
+    });
     const genres = [
         { "name": "Rumah Berhantu (Tempat Tinggal yang Menakutkan)", "guideline": "Masuki kedalaman rumah hantu yang mengerikan. Ciptakan kisah horor yang mengeksplorasi rahasia jahat, roh gelisah, dan kekuatan jahat yang bersembunyi di balik temboknya." },
         { "name": "Horor Psikologis (Mind's Abyss)", "guideline": "Selidiki kegelapan jiwa manusia. Tulislah cerita horor yang terungkap dalam benak karakter, mengaburkan batas antara kenyataan dan khayalan." },
