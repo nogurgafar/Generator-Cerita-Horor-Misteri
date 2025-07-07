@@ -1,0 +1,151 @@
+body {
+    font-family: sans-serif;
+    background-color: #121212;
+    color: #e0e0e0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+}
+
+.container {
+    background-color: #1e1e1e;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 90%;
+    max-width: 600px;
+    margin: auto;
+    flex: 1 0 auto;
+}
+
+h1 {
+    text-align: center;
+    color: #bb86fc;
+}
+
+.form-group {
+    margin-bottom: 1.5rem;
+}
+
+label {
+    display: block;
+    margin-bottom: 0.5rem;
+    color: #b0b0b0;
+}
+
+input[type="text"],
+select {
+    width: 100%;
+    padding: 0.75rem;
+    border: 1px solid #333;
+    border-radius: 4px;
+    background-color: #2c2c2c;
+    color: #e0e0e0;
+    box-sizing: border-box;
+}
+
+.form-buttons {
+    display: flex;
+    gap: 1rem;
+}
+
+button {
+    flex: 1;
+    padding: 0.75rem;
+    border: none;
+    border-radius: 4px;
+    background-color: #bb86fc;
+    color: #121212;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button[type="reset"] {
+    background-color: #444;
+    color: #eee;
+}
+
+button[type="reset"]:hover {
+    background-color: #555;
+}
+
+button:hover {
+    background-color: #a362f7;
+}
+
+#story-output {
+    margin-top: 2rem;
+    background-color: #2c2c2c;
+    padding: 1.5rem;
+    border-radius: 4px;
+}
+
+.story-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.story-buttons {
+    display: flex;
+    gap: 0.5rem;
+}
+
+#copy-button, #download-button {
+    background-color: #03dac6;
+    color: #121212;
+    padding: 0.5rem 1rem;
+    font-size: 0.9rem;
+    flex: 0;
+}
+
+#copy-button:hover, #download-button:hover {
+    background-color: #01bfa5;
+}
+
+#story-output h2 {
+    color: #bb86fc;
+    margin-top: 0;
+}
+
+#story-result {
+    white-space: pre-wrap;
+    line-height: 1.6;
+}
+footer {
+    text-align: center;
+    padding: 1rem;
+    color: #888;
+    width: 100%;
+    flex-shrink: 0;
+}
+
+@media (max-width: 600px) {
+    .container {
+        width: 100%;
+        padding: 1rem;
+        border-radius: 0;
+    }
+
+    .form-buttons {
+        flex-direction: column;
+    }
+
+    .story-header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .story-buttons {
+        margin-top: 1rem;
+        width: 100%;
+    }
+
+    .story-buttons button {
+        flex: 1;
+    }
+}
